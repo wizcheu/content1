@@ -1,7 +1,7 @@
 html {
     background-color: #f7f7f7;
     -webkit-font-smoothing: antialiased;
-    background-image: url(../img/bg.jpg);
+    background-image: url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/img/bg.jpg");
     background-position: left top;
     background-size: auto;
     background-repeat: repeat;
@@ -10,15 +10,20 @@ html {
 
 @font-face {
     font-family: "FZSSJW";
-    src: local("FZSSJW"), 
-        /* url("../fonts/FZSSJW.woff") format("woff"),
-        url("../fonts/FZSSJW.woff2") format("woff2"), */
-        url("../fonts/FZSSJW.TTF") format("truetype");
+    src: local("FZSSJW"),
+        url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/font/FZSSJW.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/font/FZSSJW.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/font/FZSSJW.TTF")
+            format("truetype");
 }
 
 @font-face {
     font-family: "monoca";
-    src: url("../fonts/monaco.ttf") format("truetype"), local("monoca");
+    src: url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/font/monaco.ttf")
+            format("truetype"),
+        local("monoca");
 }
 
 body {
@@ -734,12 +739,34 @@ h6 {
 }
 
 #comments #cancel-comment-reply-link {
-    color: #ff5151;
+    background-color: #ff5151;
+    padding: 6px 20px;
+    font-size: 14px;
+    outline: 0;
+    border-radius: 2px;
+    color: white;
 }
 
 #comments .comment-meta span {
     color: #7d7f9a;
     font-size: 1em;
+}
+
+#comments .comment-meta .comment-approve {
+    color: #FFF;
+    padding: 1px 4px;
+    font-size: 10pt;
+    border-radius: 4px;
+    margin-left: 4px;
+    transform: scale(0.8);
+}
+
+#comments .comment-meta .admin {
+    background-color: #ef4e4e;
+}
+
+#comments .comment-meta .friends{
+    background-color: #4eb4ef;
 }
 
 #comments .comment-author a {
@@ -751,8 +778,16 @@ h6 {
     float: left;
     margin: 1px 10px 0 0;
     border: #ececec 1px solid;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
+}
+
+#comments .comment-children .avatar {
+    float: left;
+    margin: 1px 10px 0 0;
+    border: #ececec 1px solid;
+    width: 30px;
+    height: 30px;
 }
 
 #comments .comment-author cite {
@@ -787,7 +822,7 @@ h6 {
     color: #ffffff;
     padding: 0.1rem 0.65rem;
     font-size: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 4px;
 }
 
 #comment-form {
@@ -834,7 +869,7 @@ input[type="submit"] {
     margin-top: 10px;
     width: 100%;
     vertical-align: top;
-    background-image: url("../img/comments.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/wizcheu/content1@main/img/comments.png");
     background-size: 140px;
     background-repeat: no-repeat;
     background-position: right;
@@ -897,12 +932,6 @@ input#author {
 
 .comment-children .comment-children {
     padding-left: 0;
-}
-
-.comment-content {
-    overflow: hidden;
-    margin-left: 60px;
-    color: #333;
 }
 
 #comments .page-navigator {
@@ -1092,7 +1121,7 @@ ol.comment-list ol {
 }
 
 .comment-content {
-    margin: 10px 62px;
+    margin: 10px 24px;
     color: #313131;
     font-size: 13px;
 }
@@ -1184,12 +1213,12 @@ ol.comment-list ol {
     height: 220px;
     /* transition: 0.5s; */
 }
-.friends li {
+#links .friends li {
     width: 19%;
     display: inline-block;
 }
 
-.friends {
+#links .friends {
     margin-bottom: 40px;
 }
 
@@ -1198,11 +1227,26 @@ h4.fri {
     color: #333333;
 }
 
+.fri span {
+    color: #15579a !important;
+    font-size: 1.1rem !important;
+}
+
 .friends img {
-    width: 20px;
+    width: 32px;
     vertical-align: middle;
     border-radius: 2px;
 }
+
+.verse {
+    font-family: "FZSSJW";
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.verse li {
+    display: block;
+}
+
 .clear,
 .clear::after,
 .clear::before {
@@ -1551,10 +1595,10 @@ html {
     content: "";
     left: 1px;
     right: 1px;
-    height: 52%;
+    height: 35%;
     background-color: #15579a;
     position: absolute;
-    opacity: 0.23;
+    opacity: 0.3;
     top: 70%;
     -webkit-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
@@ -1563,6 +1607,12 @@ html {
 
 .post_page .post_content {
     margin-top: 15px;
+}
+
+.post_page .last_update {
+    font-family: "Times New Roman", "FZSSJW";
+    font-size: 12px; 
+    color: rgb(150, 150, 150);
 }
 
 .comment-inner .avatar {
