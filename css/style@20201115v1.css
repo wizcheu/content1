@@ -1501,7 +1501,6 @@ html::-webkit-scrollbar-thumb:hover {
 
 .post-list .post-item .meta {
     display: block;
-    font-size: 14px;
     color: #999;
     min-width: 56px;
     margin-right: 16px;
