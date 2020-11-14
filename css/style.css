@@ -705,6 +705,11 @@ h6 {
     margin-top: 30px;
     padding: 35px 0 45px;
 }
+
+#comments-dairy {
+    width: 100%;
+    padding: 35px 0 45px;
+}
 .page-navigator {
     display: block;
     margin: 0; /*-40px*/
