@@ -1440,7 +1440,7 @@ h4.fri {
     }
 
     .comment-list li {
-        padding: 24px;
+        padding: 16px;
     }
 
     .comment-child {
@@ -1449,7 +1449,7 @@ h4.fri {
     }
 
     .comment-inner {
-        padding: 0;
+        padding: 0 0 4px 0;
     }
 }
 
@@ -2111,8 +2111,12 @@ html {
     .comment-list #comment-form {
         padding: 0 10px 0 30px;
     }
-    .comment-content {
+    /* .comment-content {
         margin: 10px 30px 10px 62px;
+    } */
+    .comment-content-dairy {
+        margin: 6px 0;
+        font-size: 12pt;
     }
     .friends li {
         width: auto;
