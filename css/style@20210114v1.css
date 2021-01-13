@@ -585,7 +585,7 @@ h6 {
     font-family: "Times New Roman", "FZSSJW";
     line-height: 1.8em;
     letter-spacing: 1.2px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .markdown p code {
