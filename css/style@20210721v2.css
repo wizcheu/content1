@@ -400,7 +400,7 @@ h6 {
     max-width: 960px;
     text-align: center;
     font-size: 12px;
-    padding: 60px 0 40px 0;
+    padding: 30px 0 40px 0;
     margin: 0 auto;
 }
 
@@ -452,14 +452,6 @@ h6 {
 
 .footer .powered_by a:hover {
     color: #15579a;
-}
-
-.footer .footer_slogan {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    color: #000;
-    font-size: 16px;
-    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1291,6 +1283,7 @@ h4.fri {
     writing-mode:tb-rl;  
     -webkit-writing-mode:vertical-rl;
     margin: 0 auto;
+    letter-spacing: 0.2em;
 }
 
 .verse-vertical p {
@@ -1580,7 +1573,7 @@ html {
 }
 
 .footer .footer_slogan {
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 10px;
     color: #333;
     font-size: 16px;
@@ -2071,6 +2064,11 @@ html {
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+}
+
+/* katex 字体强制样式 */
+.katex {
+    font-size: 1em !important;
 }
 
 /* 移动端适配代码，必须放在最后面，大屏放在前面，小屏放在后面*/
