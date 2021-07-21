@@ -341,6 +341,7 @@ h6 {
 
 .post .post_footer,
 .thumb_post .post_footer {
+    clear: both;
     padding: 20px 0 5px 0;
 }
 
@@ -381,7 +382,7 @@ h6 {
 .post .post_footer .meta .tags a,
 .thumb_post .post_footer .meta .tags a {
     text-decoration: none;
-    color: #bbb;
+    color: #666;
     background-color: #f9f9f9;
     padding: 6px 10px;
     border-radius: 2px;
@@ -401,6 +402,11 @@ h6 {
     font-size: 12px;
     padding: 60px 0 40px 0;
     margin: 0 auto;
+}
+
+.footer .build_time {
+    margin-top: 10px;
+    font-size: 10px;
 }
 
 .footer .beian {
@@ -1887,7 +1893,8 @@ html {
 }
 
 .prev-next {
-    display: inline;
+    clear: both;
+    padding-top: 20px;
 }
 
 .prev-post {
