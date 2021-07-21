@@ -1653,10 +1653,20 @@ html {
     margin-top: 15px;
 }
 
-.post_page .last_update {
+.article_info .last_update {
     font-family: "Times New Roman", "FZSSJW";
     font-size: 12px; 
     color: rgb(150, 150, 150);
+    float: left;
+    text-align: left;
+}
+
+.article_info .page_load_time {
+    font-family: "Times New Roman", "FZSSJW";
+    font-size: 12px; 
+    color: rgb(150, 150, 150);
+    float: right;
+    text-align: right;
 }
 
 .comment-inner .avatar {
