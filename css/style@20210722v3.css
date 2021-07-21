@@ -329,8 +329,8 @@ h6 {
     left: 100%;
     bottom: -2px;
     width: 0;
-    border-bottom: 1.8px solid #333;
-    transition: width 0.3s, left 0.3s;
+    border-bottom: 1.8px solid #15579a;
+    transition: width 0.4s, left 0.68s;
 }
 
 .post .post_content a:hover::after,
@@ -393,7 +393,7 @@ h6 {
 .post .post_footer .meta .tags a:hover,
 .thumb_post .post_footer .meta .tags a:hover {
     color: #ffffff;
-    background-color: #15579a;
+    background-color: #505050;
 }
 
 .footer {
@@ -590,7 +590,16 @@ h6 {
 .markdown p code {
     font-family: monoca;
     font-size: 0.85em;
-    background-color: #ececec;
+    background-color: #f1f1f1;
+    margin: 0 2px;
+    padding: 1px 3px;
+    background-size: auto;
+    border-radius: 2px;
+}
+
+.markdown blockquote code {
+    font-family: monoca;
+    font-size: 0.85em;
     margin: 0 2px;
     padding: 1px 3px;
     background-size: auto;
@@ -614,6 +623,8 @@ h6 {
 .markdown .stressed,
 .markdown blockquote {
     font-family: "Times New Roman", "FZSSJW";
+    line-height: 1.8em;
+    letter-spacing: 1.2px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 2.5em 0;
