@@ -235,7 +235,8 @@ h6 {
 
 .post {
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .post .post_title {
@@ -695,7 +696,7 @@ h6 {
     content: "# ";
     left: 1px;
     right: 1px;
-    color: #15579a;
+    color: #b50404;
 }
 
 /**
@@ -705,12 +706,12 @@ h6 {
 #comments {
     width: 100%;
     margin-top: 30px;
-    padding: 35px 0 45px;
+    padding: 35px 0 30px;
 }
 
 #comments-dairy {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
 }
 
 #comments-dairy .comment-meta .admin {
@@ -719,11 +720,11 @@ h6 {
 
 #comments-dairy .comment-meta .comment-approve {
     color: #FFF;
-    padding: 1px 4px;
+    padding: 0.2em 0.5em;
     font-size: 10pt;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-left: 4px;
-    transform: scale(0.8);
+    transform: scale(0.75);
 }
 
 #comments-dairy .comments-dairy-header {
@@ -770,21 +771,29 @@ h6 {
     font-size: 14px;
     outline: 0;
     border-radius: 2px;
+    border-color: #f02f2f;
     color: white;
+}
+
+#comments #cancel-comment-reply-link:hover {
+    background-color: #f02f2f;
 }
 
 #comments .comment-meta span {
     color: #7d7f9a;
     font-size: 1em;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #comments .comment-meta .comment-approve {
     color: #FFF;
-    padding: 1px 4px;
+    padding: 0.2em 0.5em;
     font-size: 10pt;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-left: 4px;
-    transform: scale(0.8);
+    transform: scale(0.75);
+    background-color: black;
 }
 
 #comments .comment-meta .admin {
@@ -846,9 +855,9 @@ h6 {
 
 #comments .comment-reply a {
     color: #ffffff;
-    padding: 0.1rem 0.65rem;
+    padding: 0.2rem 0.55rem;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 #comment-form {
@@ -905,13 +914,13 @@ input[type="submit"] {
 #comment-form input:focus,
 #comment-form textarea:focus {
     outline: 0;
-    border-color: #129fea;
+    border-color: #009090;
 }
 
 #comment-form input:focus,
 #comment-form textarea:focus {
     outline: 0;
-    border-color: #15579a;
+    border-color: #009090;
 }
 input#url,
 input#mail,
@@ -941,13 +950,13 @@ input#author {
     float: right;
     border-radius: 2px;
     background: 0 0;
-    border: 1px solid #15579a;
+    border: 1px solid #009090;
     color: #ffffff;
-    background-color: #15579a;
+    background-color: #13abab;
 }
 
 #comment-form button:hover {
-    background: #0a4886;
+    background: #009090;
     color: #fff;
     cursor: pointer;
 }
@@ -1091,7 +1100,7 @@ ol.comment-list .comment-child {
 }
 
 ol.comment-list {
-    padding: 0;
+    padding: 0 0 10px 0;
     margin: 0;
 }
 
@@ -1128,6 +1137,10 @@ ol.comment-list ol {
     border-bottom: #f5f5f5 1px solid;
 }
 
+.comment-inner-last {
+    padding: 20px;
+}
+
 .comment-child {
     border-top: 1px solid #eee;
 }
@@ -1162,13 +1175,13 @@ ol.comment-list ol {
     color: #fff;
     -o-transition: opacity 0.2s;
     margin-left: 5px;
-    background-color: #15579a;
+    background-color: #6f6f6f;
     border-radius: 0.25rem;
     padding: 0.1rem 0.25rem;
     font-size: 0.7rem;
 }
 
-.comment-inner:hover .comment-reply a {
+.comment-inner:hover .comment-reply a, .comment-inner-last:hover .comment-reply a {
     opacity: 1;
 }
 
@@ -1176,7 +1189,7 @@ ol.comment-list ol {
     line-height: 1.4375rem;
     font-size: 0.875rem;
     color: #666;
-    display: flex;
+    display: table;
 }
 
 .comment-list #comment-form {
@@ -1259,7 +1272,7 @@ h4.fri {
 }
 
 .fri span {
-    color: #15579a !important;
+    color: #b50404 !important;
     font-size: 1.1rem !important;
 }
 
@@ -1639,7 +1652,7 @@ html {
     left: 1px;
     right: 1px;
     height: 35%;
-    background-color: #15579a;
+    background-color: #b50404;
     position: absolute;
     opacity: 0.3;
     top: 70%;
@@ -1668,7 +1681,7 @@ html {
     text-align: right;
 }
 
-.comment-inner .avatar {
+.comment-inner .avatar, .comment-inner-last .avatar {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
@@ -1921,7 +1934,7 @@ html {
     left: 1px;
     right: 1px;
     height: 22%;
-    background-color: #15579a;
+    background-color: #b50404;
     position: absolute;
     opacity: 0.23;
     top: 80%;
@@ -1935,7 +1948,7 @@ html {
     left: 1px;
     right: 1px;
     height: 22%;
-    background-color: #15579a;
+    background-color: #b50404;
     position: absolute;
     opacity: 0.23;
     top: 80%;
