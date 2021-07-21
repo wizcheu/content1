@@ -1088,13 +1088,12 @@ ol.comment-list .comment-child {
     text-align: center;
     margin-top: 40px;
     font-size: 12px;
-    margin-bottom: -40px;
-    margin: 0;
+    padding-bottom: 36px;
 }
 
 .page-navigator li {
     display: inline;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 #gototop {
@@ -1209,20 +1208,6 @@ ol.comment-list ol {
 }
 .comment-by-author {
     position: relative;
-}
-
-.page-navigator {
-    list-style: none;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 12px;
-    margin-bottom: -40px;
-    margin: 0;
-}
-
-.page-navigator li {
-    display: inline;
-    padding: 0 15px;
 }
 
 #gototop {
