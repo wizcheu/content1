@@ -390,6 +390,11 @@ h6 {
     margin-right: 6px;
 }
 
+.post .post_footer .meta .tags a::before,
+.thumb_post .post_footer .meta .tags a::before {
+    content: '# ';
+}
+
 .post .post_footer .meta .tags a:hover,
 .thumb_post .post_footer .meta .tags a:hover {
     color: #ffffff;
@@ -413,15 +418,13 @@ h6 {
 .footer .beian {
     margin-top: 20px;
     font-size: 8px;
+    display: inline;
 }
 
-.footer a {
-    color: #4e4e4c;
-    margin: 0 12px;
-}
-
-.footer a:hover {
-    color: #1f1f1f;
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 8px;
+    display: inline;
 }
 
 .footer .bitcron_nav_container .site_nav_wrap {
@@ -1515,11 +1518,11 @@ html::-webkit-scrollbar-thumb:hover {
     margin-right: 16px;
 }
 
-.tagcloud-wrap {
+.tagcloud-wrap, .categorycloud-wrap {
     overflow: hidden;
 }
 
-.tagcloud-wrap a {
+.tagcloud-wrap a, .categorycloud-wrap a {
     background-image: none;
     -webkit-text-size-adjust: none;
     white-space: nowrap;
@@ -1527,18 +1530,23 @@ html::-webkit-scrollbar-thumb:hover {
     margin-right: 20px;
     margin-bottom: 10px;
     float: left;
-    color: #807d7d;
+    color: #666;
+    background-color: #f9f9f9;
     border-radius: 0.15rem;
     padding: 2px 0.45rem;
 }
 
-.tagcloud-wrap a:hover {
+.tagcloud-wrap a:hover, .categorycloud-wrap a:hover {
     background-color: #505050;
     color: #fff;
 }
 
 .tagcloud-wrap a:before {
     content: "#";
+    padding: 0.3rem;
+}
+
+.categorycloud-wrap a::before {
     padding: 0.3rem;
 }
 
@@ -1592,15 +1600,6 @@ html {
 
 .footer .footer_slogan img {
     width: 20%;
-}
-
-.copyright {
-    color: #6f6f6f66;
-    margin-top: 12px;
-}
-
-.copyright a {
-    color: #6f6f6f66 !important;
 }
 
 .icon {
