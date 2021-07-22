@@ -623,6 +623,15 @@ h6 {
     background: #fdfdfd;
 }
 
+.markdown table code {
+    font-family: monoca;
+    font-size: 0.85em;
+    margin: 0 2px;
+    padding: 1px 3px;
+    background-size: auto;
+    border-radius: 2px;
+}
+
 .markdown .stressed,
 .markdown blockquote {
     font-family: "Times New Roman", "FZSSJW";
